@@ -6,6 +6,7 @@
       <%= song.released %>
       <%= song.genre %>
       <%= song.artist_name %>
+      <%= link_to "Delete #{song.title}", song, method: :delete, data: {confirm: "you sure?"} %>
     </tr>
   <% end %>
 </tbody>
